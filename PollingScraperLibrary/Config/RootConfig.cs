@@ -9,10 +9,13 @@ namespace PollingScraperLibrary.Config
     public class RootConfig
     {
         public IEnumerable<SourceConfig> Sources { get; set; }
+        public string BrowserPath { get; set; }
 
         public RootConfig(IConfiguration config)
         { 
             var sources = new List<SourceConfig>();
+
+            this.BrowserPath = config.GetSection("browserPath").Value;
 
             var configSources = config.GetSection("sources").GetChildren();
 

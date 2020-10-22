@@ -29,20 +29,17 @@ namespace PollingScraper
                 .AddSingleton<SessionOrchestrator>()
                 .AddSingleton<HttpClient>()
                 .AddSingleton<RootQueryRunner>()
+                .AddSingleton<BrowserRunner>()
                 .BuildServiceProvider();
 
             var orc = serviceProvider.GetService<SessionOrchestrator>();
             var logger = serviceProvider.GetService<ILogger<Program>>();
 
-            logger.LogError("test");
             logger.LogDebug("Starting application");
 
             orc.Start();
 
-            while (Console.ReadKey().Key != ConsoleKey.X)
-            {
-                // spin
-            }
+            StartConsoleLoop(serviceProvider);
 
             logger.LogDebug("All done!");
         }
@@ -61,6 +58,35 @@ namespace PollingScraper
                 return new ConfigurationBuilder()
                     .AddJsonFile("appsettings.json", true, true)
                     .Build();
+            }
+        }
+
+        private static void StartConsoleLoop(ServiceProvider serviceProvider)
+        {
+            var orc = serviceProvider.GetService<SessionOrchestrator>();
+            var runner = serviceProvider.GetService<BrowserRunner>();
+
+            var command = Console.ReadLine().ToLower().Trim();
+            bool done = false;
+
+            while (!done)
+            {
+                if (command == "exit")
+                {
+                    done = true;
+                }
+                else if (command == "test")
+                {
+                    runner.Run("www.google.com");
+                }
+                else if (command == "stop")
+                {
+                    orc.Stop();
+                }
+                else if (command == "start")
+                {
+                    orc.Start();
+                }
             }
 
         }

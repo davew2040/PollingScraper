@@ -14,6 +14,15 @@
           "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Abstractions/3.1.9": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Extensions.Primitives/3.1.9": {
         "type": "package",
         "dependencies": {
@@ -94,6 +103,20 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.1.9": {
+      "sha512": "W5fbF8qVR9SMVVJqDQLIR7meWbev6Pu/lbrm7LDNr4Sp7HOotr4k2UULTdFSXOi5aoDdkQZpWnq0ZSpjrR3tjg==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/3.1.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.9": {
@@ -266,27 +289,30 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
       "Microsoft.Extensions.Configuration.Abstractions >= 3.1.9",
+      "Microsoft.Extensions.Logging.Abstractions >= 3.1.9",
       "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dwint\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\dave\\.nuget\\packages\\": {},
+    "I:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj",
+      "projectUniqueName": "I:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj",
       "projectName": "PollingScraperLibrary",
-      "projectPath": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj",
-      "packagesPath": "C:\\Users\\dwint\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\obj\\",
+      "projectPath": "I:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj",
+      "packagesPath": "C:\\Users\\dave\\.nuget\\packages\\",
+      "outputPath": "I:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "I:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dwint\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -294,7 +320,6 @@
         "netstandard2.1"
       ],
       "sources": {
-        "C:\\Dev\\Local NuGet Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
@@ -313,6 +338,10 @@
       "netstandard2.1": {
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": {
+            "target": "Package",
+            "version": "[3.1.9, )"
+          },
+          "Microsoft.Extensions.Logging.Abstractions": {
             "target": "Package",
             "version": "[3.1.9, )"
           },
@@ -336,7 +365,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

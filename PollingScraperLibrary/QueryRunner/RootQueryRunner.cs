@@ -1,4 +1,5 @@
-﻿using PollingScraperLibrary.QueryRunner.SpecificRunners;
+﻿using Microsoft.Extensions.Logging;
+using PollingScraperLibrary.QueryRunner.SpecificRunners;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -10,23 +11,28 @@ namespace PollingScraperLibrary.QueryRunner
 {
     public class RootQueryRunner
     {
-        private readonly HttpClient client;
+        private readonly HttpClient _client;
+        private readonly BrowserRunner _runner;
+        private readonly ILogger<RootQueryRunner> _logger;
+        private readonly SessionOrchestrator _orch;
 
-        public RootQueryRunner(HttpClient client)
+        public RootQueryRunner(HttpClient client, ILogger<RootQueryRunner> logger, BrowserRunner runner)
         {
-            this.client = client;
+            _client = client;
+            _runner = runner;
+            _logger = logger;
         }
 
         public async Task Run(SourceDefinition source, CancellationToken token)
         {
             if (source.Source == SourceType.Amazon)
             {
-                var amazon = new Amazon(this.client, source);
+                var amazon = new Amazon(_client, _logger, _runner, source);
                 await amazon.Run(token);
             }
             else if (source.Source == SourceType.NewEgg)
             {
-                var newEgg = new NewEgg(this.client, source);
+                var newEgg = new NewEgg(_client, source);
                 await newEgg.Run(token);
             }
             else

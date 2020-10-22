@@ -7,3 +7,11 @@ C:\Dev\Projects\PollingScraper\PollingScraperLibrary\bin\Debug\netstandard2.1\Po
 C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.dll
 C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.pdb
 C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.csproj.CoreCompileInputs.cache
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\bin\Debug\netstandard2.1\PollingScraperLibrary.deps.json
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\bin\Debug\netstandard2.1\PollingScraperLibrary.dll
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\bin\Debug\netstandard2.1\PollingScraperLibrary.pdb
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.csprojAssemblyReference.cache
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.AssemblyInfoInputs.cache
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.AssemblyInfo.cs
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.dll
+I:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.pdb

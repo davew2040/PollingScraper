@@ -51,6 +51,7 @@ namespace PollingScraperLibrary
                 }
 
                 this.canceller.Cancel();
+                this.activeTasks = new List<Task>();
             }
         }
     }

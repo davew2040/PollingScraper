@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
@@ -9,30 +10,30 @@ namespace PollingScraperLibrary.QueryRunner.SpecificRunners
 {
     public class Amazon : IQueryRunner
     {
-        private readonly HttpClient Client;
-        private readonly SourceDefinition Source;
+        private readonly HttpClient _client;
+        private readonly SourceDefinition _source;
+        private readonly ILogger _logger;
+        private readonly BrowserRunner _runner;
 
-        public Amazon(HttpClient client, SourceDefinition source) => (Client, Source) = (client, source);
+        public Amazon(HttpClient client, ILogger logger, BrowserRunner runner, SourceDefinition source) => (_client, _logger, _runner, _source) = (client, logger, runner, source);
 
         public async Task Run(CancellationToken token)
         {
             while (!token.IsCancellationRequested)
             {
-                var response = await this.Client.GetAsync(this.Source.QueryUrl, token);
+                var response = await this._client.GetAsync(this._source.QueryUrl, token);
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    if (content.Contains("Auto Notify"))
+
+                    if (content.Contains("See All Buying Options"))
                     {
-                        Console.WriteLine("Found Auto Notify");
-                    }
-                    else if (content.Contains("Add to Cart"))
-                    {
-                        Console.WriteLine("Found Add to Cart");
+                        this._logger.LogInformation($"Amazon - found {this._source.Title}");
+                        _runner.Run(_source.QueryUrl);
                     }
                 }
 
-                await Task.Delay(this.Source.CycleDelay);
+                await Task.Delay(this._source.CycleDelay);
             }
         }
     }

@@ -221,6 +221,7 @@
         "framework": ".NETStandard,Version=v2.1",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "3.1.9",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.9",
           "Newtonsoft.Json": "12.0.3"
         },
         "compile": {
@@ -552,23 +553,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dwint\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\dave\\.nuget\\packages\\": {},
+    "I:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperConsole\\PollingScraperConsole.csproj",
+      "projectUniqueName": "I:\\Dev\\Projects\\PollingScraper\\PollingScraperConsole\\PollingScraperConsole.csproj",
       "projectName": "PollingScraperConsole",
-      "projectPath": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperConsole\\PollingScraperConsole.csproj",
-      "packagesPath": "C:\\Users\\dwint\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperConsole\\obj\\",
+      "projectPath": "I:\\Dev\\Projects\\PollingScraper\\PollingScraperConsole\\PollingScraperConsole.csproj",
+      "packagesPath": "C:\\Users\\dave\\.nuget\\packages\\",
+      "outputPath": "I:\\Dev\\Projects\\PollingScraper\\PollingScraperConsole\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "I:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dwint\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dave\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -576,15 +579,14 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Dev\\Local NuGet Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj": {
-              "projectPath": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj"
+            "I:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj": {
+              "projectPath": "I:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj"
             }
           }
         }
@@ -638,7 +640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
