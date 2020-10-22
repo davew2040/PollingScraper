@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "liysLKSnm7R9qUYoZDbyaZScaVJZH8rRIrZrw70Rk8cyoGdpDeianaiq8u6NHrfnKS21VoCeUbow/W5FRgQIzw==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\Projects\\PollingScraper\\PollingScraperLibrary\\PollingScraperLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dwint\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\dwint\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\dwint\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\dwint\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\dwint\\.nuget\\packages\\system.memory\\4.5.2\\system.memory.4.5.2.nupkg.sha512",
+    "C:\\Users\\dwint\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\dwint\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,9 @@
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.csprojAssemblyReference.cache
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.AssemblyInfoInputs.cache
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.AssemblyInfo.cs
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\bin\Debug\netstandard2.1\PollingScraperLibrary.deps.json
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\bin\Debug\netstandard2.1\PollingScraperLibrary.dll
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\bin\Debug\netstandard2.1\PollingScraperLibrary.pdb
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.dll
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.pdb
+C:\Dev\Projects\PollingScraper\PollingScraperLibrary\obj\Debug\netstandard2.1\PollingScraperLibrary.csproj.CoreCompileInputs.cache

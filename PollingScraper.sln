@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollingScraperConsole", "PollingScraperConsole\PollingScraperConsole.csproj", "{FDF0A175-DDF8-4337-B17A-2D5A088DF674}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PollingScraperConsole", "PollingScraperConsole\PollingScraperConsole.csproj", "{FDF0A175-DDF8-4337-B17A-2D5A088DF674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PollingScraperLibrary", "PollingScraperLibrary\PollingScraperLibrary.csproj", "{107DB099-692A-4E3A-BBE4-B0B6952E77AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FDF0A175-DDF8-4337-B17A-2D5A088DF674}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDF0A175-DDF8-4337-B17A-2D5A088DF674}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDF0A175-DDF8-4337-B17A-2D5A088DF674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{107DB099-692A-4E3A-BBE4-B0B6952E77AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{107DB099-692A-4E3A-BBE4-B0B6952E77AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{107DB099-692A-4E3A-BBE4-B0B6952E77AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{107DB099-692A-4E3A-BBE4-B0B6952E77AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
